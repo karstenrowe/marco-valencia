@@ -1,0 +1,192 @@
+// Import Theme CSS
+@import "stylish-portfolio.css";
+
+// Color Variables
+@grey-04: #181517;
+@grey-03: #352f33;
+@grey-02: #676165;
+@grey-01: #b3adb1;
+@grey-00: #f2edf0;
+
+@coral-04: #311c29;
+@coral-03: #533046;
+@coral-02: #764865;
+@coral-01: #d4aac4;
+@coral-00: #f9e8f3;
+
+// Typography
+@font-headline: 'Roboto Slab', serif;
+@font-body: 'Roboto', serif;
+
+// Global
+body {
+  color: @grey-03;
+  font-family: @font-body;
+  font-weight: 400;
+}
+h1, h3 {
+  color: @coral-03;
+  font-family: @font-headline;
+  font-weight: 700;
+}
+h2, h4, h5, h6 {
+  color: @coral-03;
+  font-family: @font-body;
+  font-weight: 500;
+}
+h4 {
+  font-size: 1.6rem;
+  margin-bottom: 1.4rem;
+}
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.8rem;
+  @media (min-width: 992px) {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+.content-section.bg-primary {
+//  background: @coral-02 !important;
+}
+.content-section.bg-secondary {
+  //background: @coral-03 !important;
+}
+a {
+  color: @coral-03;
+  &:hover {
+    color: @coral-04;
+  }
+}
+a.btn {
+  background: @coral-02 !important;
+  background: rgba(118, 72, 101, 0.8) !important;
+  border: 2px solid @coral-03 !important;
+  border-radius: 0;
+  box-shadow: none !important;
+  color: @coral-04 !important;
+  display: block;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  margin-bottom: 1rem;
+  outline: none;
+  text-transform: uppercase;
+  &:hover, &:focus, &:active {
+    background: @coral-03 !important;
+    border: 2px solid @coral-04 !important;
+    color: @coral-02 !important;
+    outline: none;
+    outline: none;
+  }
+  @media (min-width: 992px) {
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+  }
+}
+
+// Wrapper
+.container {
+  @media (min-width: 992px) {
+    max-width: 1400px;
+  }
+}
+
+// Hero
+.masthead {
+  background: none @coral-02 !important;
+  background-image: url("../img/bg-masthead.png") !important;
+  background-position: 0 100% !important;
+  background-repeat: no-repeat !important;
+  background-size: 120% !important;
+  overflow: hidden;
+  @media (min-width: 992px) {
+    background-size: 80% !important;
+  }
+  .logo {
+    margin-top: -8rem;
+    width: 60px;
+    @media (min-width: 992px) {
+      margin-top: -6rem;
+      width: 80px;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    line-height: 1.0;
+    margin-bottom: 0.8rem !important;
+    @media (min-width: 992px) {
+      font-size: 3.4rem;
+      margin-top: 8rem;
+    }
+  }
+  h2 {
+    color: @coral-04;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem !important;
+    @media (min-width: 992px) {
+      font-size: 1.6rem;
+      margin-bottom: 4rem !important;
+    }
+  }
+  p {
+    color: @coral-01;
+  }
+  a.btn {
+    //background: rgba(118, 72, 101, 0.8) !important;
+    &:hover {
+    //  background: @coral-02 !important;
+    }
+  }
+  img {
+    margin-top: -2rem;
+    opacity: 0.88;
+  }
+}
+
+// Services
+.section-services {
+  background: @coral-01 !important;
+}
+
+// Contact
+.contact {
+  background: @coral-02 !important;
+  padding: 8rem 0;
+  p {
+    color: @coral-01;
+    font-size: 1rem !important;
+    span {
+      display: block;
+      padding: 0.2rem;
+    }
+    span.bullet {
+      display: none;
+    }
+    a {
+      text-decoration: none;
+    }
+    .fab {
+      color: @coral-04;
+      font-size: 1.6rem;
+      margin: 8px;
+    }
+  }
+  @media (min-width: 992px) {
+    p {
+      span {
+        display: inline-block;
+        padding: 0.4rem;
+      }
+      span.bullet {
+        display: inline-block;
+      }
+    }
+  }
+  .footer {
+    p {
+      color: @coral-03;
+    }
+  }
+}
